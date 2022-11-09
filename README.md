@@ -13,3 +13,7 @@ Autor: Erik Grüneberger
 * Flutter
 * Android Studio Dolphin | 2021.3.1 Patch 1
 * Dart
+
+## Apk
+
+Die apk der app befindet sich unter im Ordner `app_apk`
