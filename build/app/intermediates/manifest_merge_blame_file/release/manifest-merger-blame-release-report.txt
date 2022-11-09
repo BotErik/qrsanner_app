@@ -1,0 +1,240 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.code_scanner"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/home/erik/StudioProjects/code_scanner/android/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->/home/erik/StudioProjects/code_scanner/android/app/src/main/AndroidManifest.xml
+10
+11    <uses-feature android:name="android.hardware.camera.any" />
+11-->/home/erik/StudioProjects/code_scanner/android/app/src/main/AndroidManifest.xml:4:5-63
+11-->/home/erik/StudioProjects/code_scanner/android/app/src/main/AndroidManifest.xml:4:19-61
+12
+13    <uses-permission android:name="android.permission.CAMERA" />
+13-->/home/erik/StudioProjects/code_scanner/android/app/src/main/AndroidManifest.xml:5:5-64
+13-->/home/erik/StudioProjects/code_scanner/android/app/src/main/AndroidManifest.xml:5:22-62
+14
+15    <!-- Provide required visibility configuration for API level 30 and above -->
+16    <queries>
+16-->/home/erik/StudioProjects/code_scanner/android/app/src/main/AndroidManifest.xml:8:5-19:15
+17
+18        <!-- If your app checks for SMS support -->
+19        <intent>
+19-->/home/erik/StudioProjects/code_scanner/android/app/src/main/AndroidManifest.xml:10:9-13:18
+20            <action android:name="android.intent.action.VIEW" />
+20-->/home/erik/StudioProjects/code_scanner/android/app/src/main/AndroidManifest.xml:11:13-65
+20-->/home/erik/StudioProjects/code_scanner/android/app/src/main/AndroidManifest.xml:11:21-62
+21
+22            <data android:scheme="sms" />
+22-->/home/erik/StudioProjects/code_scanner/android/app/src/main/AndroidManifest.xml:12:13-42
+22-->/home/erik/StudioProjects/code_scanner/android/app/src/main/AndroidManifest.xml:12:19-39
+23        </intent>
+24        <!-- If your app checks for call support -->
+25        <intent>
+25-->/home/erik/StudioProjects/code_scanner/android/app/src/main/AndroidManifest.xml:15:9-18:18
+26            <action android:name="android.intent.action.VIEW" />
+26-->/home/erik/StudioProjects/code_scanner/android/app/src/main/AndroidManifest.xml:11:13-65
+26-->/home/erik/StudioProjects/code_scanner/android/app/src/main/AndroidManifest.xml:11:21-62
+27
+28            <data android:scheme="tel" />
+28-->/home/erik/StudioProjects/code_scanner/android/app/src/main/AndroidManifest.xml:12:13-42
+28-->/home/erik/StudioProjects/code_scanner/android/app/src/main/AndroidManifest.xml:12:19-39
+29        </intent>
+30    </queries>
+31    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+32    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+33    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+33-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/erik/.gradle/caches/transforms-3/dc7c65a3010064290ad75bc9ded151e5/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:25:5-79
+33-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/erik/.gradle/caches/transforms-3/dc7c65a3010064290ad75bc9ded151e5/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:25:22-76
+34    <uses-permission android:name="android.permission.INTERNET" />
+34-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/erik/.gradle/caches/transforms-3/dc7c65a3010064290ad75bc9ded151e5/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:26:5-67
+34-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/erik/.gradle/caches/transforms-3/dc7c65a3010064290ad75bc9ded151e5/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:26:22-64
+35
+36    <application
+36-->/home/erik/StudioProjects/code_scanner/android/app/src/main/AndroidManifest.xml:20:4-49:19
+37        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+37-->[androidx.core:core:1.6.0] /home/erik/.gradle/caches/transforms-3/acbce933e4b464a5224ed377a62db1f5/transformed/core-1.6.0/AndroidManifest.xml:24:18-86
+38        android:icon="@mipmap/ic_launcher"
+38-->/home/erik/StudioProjects/code_scanner/android/app/src/main/AndroidManifest.xml:22:9-43
+39        android:label="QRCode Scanner" >
+39-->/home/erik/StudioProjects/code_scanner/android/app/src/main/AndroidManifest.xml:21:9-39
+40        <activity
+40-->/home/erik/StudioProjects/code_scanner/android/app/src/main/AndroidManifest.xml:23:9-43:20
+41            android:name="com.example.code_scanner.MainActivity"
+41-->/home/erik/StudioProjects/code_scanner/android/app/src/main/AndroidManifest.xml:24:13-41
+42            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+42-->/home/erik/StudioProjects/code_scanner/android/app/src/main/AndroidManifest.xml:28:13-163
+43            android:exported="true"
+43-->/home/erik/StudioProjects/code_scanner/android/app/src/main/AndroidManifest.xml:25:13-36
+44            android:hardwareAccelerated="true"
+44-->/home/erik/StudioProjects/code_scanner/android/app/src/main/AndroidManifest.xml:29:13-47
+45            android:launchMode="singleTop"
+45-->/home/erik/StudioProjects/code_scanner/android/app/src/main/AndroidManifest.xml:26:13-43
+46            android:theme="@style/LaunchTheme"
+46-->/home/erik/StudioProjects/code_scanner/android/app/src/main/AndroidManifest.xml:27:13-47
+47            android:windowSoftInputMode="adjustResize" >
+47-->/home/erik/StudioProjects/code_scanner/android/app/src/main/AndroidManifest.xml:30:13-55
+48
+49            <!--
+50                 Specifies an Android theme to apply to this Activity as soon as
+51                 the Android process has started. This theme is visible to the user
+52                 while the Flutter UI initializes. After that, this theme continues
+53                 to determine the Window background behind the Flutter UI.
+54            -->
+55            <meta-data
+55-->/home/erik/StudioProjects/code_scanner/android/app/src/main/AndroidManifest.xml:35:13-38:17
+56                android:name="io.flutter.embedding.android.NormalTheme"
+56-->/home/erik/StudioProjects/code_scanner/android/app/src/main/AndroidManifest.xml:36:15-70
+57                android:resource="@style/NormalTheme" />
+57-->/home/erik/StudioProjects/code_scanner/android/app/src/main/AndroidManifest.xml:37:15-52
+58
+59            <intent-filter>
+59-->/home/erik/StudioProjects/code_scanner/android/app/src/main/AndroidManifest.xml:39:13-42:29
+60                <action android:name="android.intent.action.MAIN" />
+60-->/home/erik/StudioProjects/code_scanner/android/app/src/main/AndroidManifest.xml:40:17-68
+60-->/home/erik/StudioProjects/code_scanner/android/app/src/main/AndroidManifest.xml:40:25-66
+61
+62                <category android:name="android.intent.category.LAUNCHER" />
+62-->/home/erik/StudioProjects/code_scanner/android/app/src/main/AndroidManifest.xml:41:17-76
+62-->/home/erik/StudioProjects/code_scanner/android/app/src/main/AndroidManifest.xml:41:27-74
+63            </intent-filter>
+64        </activity>
+65        <!--
+66             Don't delete the meta-data below.
+67             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+68        -->
+69        <meta-data
+69-->/home/erik/StudioProjects/code_scanner/android/app/src/main/AndroidManifest.xml:46:9-48:33
+70            android:name="flutterEmbedding"
+70-->/home/erik/StudioProjects/code_scanner/android/app/src/main/AndroidManifest.xml:47:13-44
+71            android:value="2" />
+71-->/home/erik/StudioProjects/code_scanner/android/app/src/main/AndroidManifest.xml:48:13-30
+72
+73        <activity
+73-->[:url_launcher_android] /home/erik/StudioProjects/code_scanner/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-13:74
+74            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+74-->[:url_launcher_android] /home/erik/StudioProjects/code_scanner/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-74
+75            android:exported="false"
+75-->[:url_launcher_android] /home/erik/StudioProjects/code_scanner/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-37
+76            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+76-->[:url_launcher_android] /home/erik/StudioProjects/code_scanner/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-71
+77
+78        <uses-library
+78-->[androidx.window:window:1.0.0-beta04] /home/erik/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+79            android:name="androidx.window.extensions"
+79-->[androidx.window:window:1.0.0-beta04] /home/erik/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+80            android:required="false" />
+80-->[androidx.window:window:1.0.0-beta04] /home/erik/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+81        <uses-library
+81-->[androidx.window:window:1.0.0-beta04] /home/erik/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+82            android:name="androidx.window.sidecar"
+82-->[androidx.window:window:1.0.0-beta04] /home/erik/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+83            android:required="false" />
+83-->[androidx.window:window:1.0.0-beta04] /home/erik/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+84
+85        <service
+85-->[androidx.camera:camera-camera2:1.2.0-alpha01] /home/erik/.gradle/caches/transforms-3/66da1f9c5e62fdc10526a4cd1618c777/transformed/jetified-camera-camera2-1.2.0-alpha01/AndroidManifest.xml:26:9-35:19
+86            android:name="androidx.camera.core.impl.MetadataHolderService"
+86-->[androidx.camera:camera-camera2:1.2.0-alpha01] /home/erik/.gradle/caches/transforms-3/66da1f9c5e62fdc10526a4cd1618c777/transformed/jetified-camera-camera2-1.2.0-alpha01/AndroidManifest.xml:27:13-75
+87            android:enabled="false"
+87-->[androidx.camera:camera-camera2:1.2.0-alpha01] /home/erik/.gradle/caches/transforms-3/66da1f9c5e62fdc10526a4cd1618c777/transformed/jetified-camera-camera2-1.2.0-alpha01/AndroidManifest.xml:28:13-36
+88            android:exported="false" >
+88-->[androidx.camera:camera-camera2:1.2.0-alpha01] /home/erik/.gradle/caches/transforms-3/66da1f9c5e62fdc10526a4cd1618c777/transformed/jetified-camera-camera2-1.2.0-alpha01/AndroidManifest.xml:29:13-37
+89            <meta-data
+89-->[androidx.camera:camera-camera2:1.2.0-alpha01] /home/erik/.gradle/caches/transforms-3/66da1f9c5e62fdc10526a4cd1618c777/transformed/jetified-camera-camera2-1.2.0-alpha01/AndroidManifest.xml:32:13-34:89
+90                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+90-->[androidx.camera:camera-camera2:1.2.0-alpha01] /home/erik/.gradle/caches/transforms-3/66da1f9c5e62fdc10526a4cd1618c777/transformed/jetified-camera-camera2-1.2.0-alpha01/AndroidManifest.xml:33:17-103
+91                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+91-->[androidx.camera:camera-camera2:1.2.0-alpha01] /home/erik/.gradle/caches/transforms-3/66da1f9c5e62fdc10526a4cd1618c777/transformed/jetified-camera-camera2-1.2.0-alpha01/AndroidManifest.xml:34:17-86
+92        </service>
+93        <service
+93-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.0.0] /home/erik/.gradle/caches/transforms-3/5c6e7baf6fb2b3692d55a2dd3d53beb7/transformed/jetified-play-services-mlkit-barcode-scanning-18.0.0/AndroidManifest.xml:9:9-15:19
+94            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+94-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.0.0] /home/erik/.gradle/caches/transforms-3/5c6e7baf6fb2b3692d55a2dd3d53beb7/transformed/jetified-play-services-mlkit-barcode-scanning-18.0.0/AndroidManifest.xml:10:13-91
+95            android:directBootAware="true"
+95-->[com.google.mlkit:common:18.0.0] /home/erik/.gradle/caches/transforms-3/a8d3f9dd24ace6c94bfc985ffc73f968/transformed/jetified-common-18.0.0/AndroidManifest.xml:17:13-43
+96            android:exported="false" >
+96-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.0.0] /home/erik/.gradle/caches/transforms-3/5c6e7baf6fb2b3692d55a2dd3d53beb7/transformed/jetified-play-services-mlkit-barcode-scanning-18.0.0/AndroidManifest.xml:11:13-37
+97            <meta-data
+97-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.0.0] /home/erik/.gradle/caches/transforms-3/5c6e7baf6fb2b3692d55a2dd3d53beb7/transformed/jetified-play-services-mlkit-barcode-scanning-18.0.0/AndroidManifest.xml:12:13-14:85
+98                android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar"
+98-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.0.0] /home/erik/.gradle/caches/transforms-3/5c6e7baf6fb2b3692d55a2dd3d53beb7/transformed/jetified-play-services-mlkit-barcode-scanning-18.0.0/AndroidManifest.xml:13:17-120
+99                android:value="com.google.firebase.components.ComponentRegistrar" />
+99-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.0.0] /home/erik/.gradle/caches/transforms-3/5c6e7baf6fb2b3692d55a2dd3d53beb7/transformed/jetified-play-services-mlkit-barcode-scanning-18.0.0/AndroidManifest.xml:14:17-82
+100            <meta-data
+100-->[com.google.mlkit:vision-common:17.0.0] /home/erik/.gradle/caches/transforms-3/6121614ac855993e2a9fb21868b51e27/transformed/jetified-vision-common-17.0.0/AndroidManifest.xml:12:13-14:85
+101                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+101-->[com.google.mlkit:vision-common:17.0.0] /home/erik/.gradle/caches/transforms-3/6121614ac855993e2a9fb21868b51e27/transformed/jetified-vision-common-17.0.0/AndroidManifest.xml:13:17-124
+102                android:value="com.google.firebase.components.ComponentRegistrar" />
+102-->[com.google.mlkit:vision-common:17.0.0] /home/erik/.gradle/caches/transforms-3/6121614ac855993e2a9fb21868b51e27/transformed/jetified-vision-common-17.0.0/AndroidManifest.xml:14:17-82
+103            <meta-data
+103-->[com.google.mlkit:common:18.0.0] /home/erik/.gradle/caches/transforms-3/a8d3f9dd24ace6c94bfc985ffc73f968/transformed/jetified-common-18.0.0/AndroidManifest.xml:20:13-22:85
+104                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+104-->[com.google.mlkit:common:18.0.0] /home/erik/.gradle/caches/transforms-3/a8d3f9dd24ace6c94bfc985ffc73f968/transformed/jetified-common-18.0.0/AndroidManifest.xml:21:17-120
+105                android:value="com.google.firebase.components.ComponentRegistrar" />
+105-->[com.google.mlkit:common:18.0.0] /home/erik/.gradle/caches/transforms-3/a8d3f9dd24ace6c94bfc985ffc73f968/transformed/jetified-common-18.0.0/AndroidManifest.xml:22:17-82
+106        </service>
+107
+108        <provider
+108-->[com.google.mlkit:common:18.0.0] /home/erik/.gradle/caches/transforms-3/a8d3f9dd24ace6c94bfc985ffc73f968/transformed/jetified-common-18.0.0/AndroidManifest.xml:9:9-13:38
+109            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+109-->[com.google.mlkit:common:18.0.0] /home/erik/.gradle/caches/transforms-3/a8d3f9dd24ace6c94bfc985ffc73f968/transformed/jetified-common-18.0.0/AndroidManifest.xml:10:13-78
+110            android:authorities="com.example.code_scanner.mlkitinitprovider"
+110-->[com.google.mlkit:common:18.0.0] /home/erik/.gradle/caches/transforms-3/a8d3f9dd24ace6c94bfc985ffc73f968/transformed/jetified-common-18.0.0/AndroidManifest.xml:11:13-69
+111            android:exported="false"
+111-->[com.google.mlkit:common:18.0.0] /home/erik/.gradle/caches/transforms-3/a8d3f9dd24ace6c94bfc985ffc73f968/transformed/jetified-common-18.0.0/AndroidManifest.xml:12:13-37
+112            android:initOrder="99" />
+112-->[com.google.mlkit:common:18.0.0] /home/erik/.gradle/caches/transforms-3/a8d3f9dd24ace6c94bfc985ffc73f968/transformed/jetified-common-18.0.0/AndroidManifest.xml:13:13-35
+113
+114        <activity
+114-->[com.google.android.gms:play-services-base:18.0.1] /home/erik/.gradle/caches/transforms-3/3ff720be07735976176520d1c05fb799/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+115            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+115-->[com.google.android.gms:play-services-base:18.0.1] /home/erik/.gradle/caches/transforms-3/3ff720be07735976176520d1c05fb799/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+116            android:exported="false"
+116-->[com.google.android.gms:play-services-base:18.0.1] /home/erik/.gradle/caches/transforms-3/3ff720be07735976176520d1c05fb799/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+117            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+117-->[com.google.android.gms:play-services-base:18.0.1] /home/erik/.gradle/caches/transforms-3/3ff720be07735976176520d1c05fb799/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+118
+119        <meta-data
+119-->[com.google.android.gms:play-services-basement:18.0.0] /home/erik/.gradle/caches/transforms-3/601d4158b382ad9f634d3bbb23a34c83/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
+120            android:name="com.google.android.gms.version"
+120-->[com.google.android.gms:play-services-basement:18.0.0] /home/erik/.gradle/caches/transforms-3/601d4158b382ad9f634d3bbb23a34c83/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:22:13-58
+121            android:value="@integer/google_play_services_version" />
+121-->[com.google.android.gms:play-services-basement:18.0.0] /home/erik/.gradle/caches/transforms-3/601d4158b382ad9f634d3bbb23a34c83/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:23:13-66
+122
+123        <service
+123-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/erik/.gradle/caches/transforms-3/dc7c65a3010064290ad75bc9ded151e5/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:29:9-35:19
+124            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+124-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/erik/.gradle/caches/transforms-3/dc7c65a3010064290ad75bc9ded151e5/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:30:13-103
+125            android:exported="false" >
+125-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/erik/.gradle/caches/transforms-3/dc7c65a3010064290ad75bc9ded151e5/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:31:13-37
+126            <meta-data
+126-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/erik/.gradle/caches/transforms-3/dc7c65a3010064290ad75bc9ded151e5/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:32:13-34:39
+127                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+127-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/erik/.gradle/caches/transforms-3/dc7c65a3010064290ad75bc9ded151e5/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:33:17-94
+128                android:value="cct" />
+128-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /home/erik/.gradle/caches/transforms-3/dc7c65a3010064290ad75bc9ded151e5/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:34:17-36
+129        </service>
+130        <service
+130-->[com.google.android.datatransport:transport-runtime:2.2.6] /home/erik/.gradle/caches/transforms-3/9f6b077e57e6a6558af0f12467efdf97/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:26:9-30:19
+131            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+131-->[com.google.android.datatransport:transport-runtime:2.2.6] /home/erik/.gradle/caches/transforms-3/9f6b077e57e6a6558af0f12467efdf97/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:27:13-117
+132            android:exported="false"
+132-->[com.google.android.datatransport:transport-runtime:2.2.6] /home/erik/.gradle/caches/transforms-3/9f6b077e57e6a6558af0f12467efdf97/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:28:13-37
+133            android:permission="android.permission.BIND_JOB_SERVICE" >
+133-->[com.google.android.datatransport:transport-runtime:2.2.6] /home/erik/.gradle/caches/transforms-3/9f6b077e57e6a6558af0f12467efdf97/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:29:13-69
+134        </service>
+135
+136        <receiver
+136-->[com.google.android.datatransport:transport-runtime:2.2.6] /home/erik/.gradle/caches/transforms-3/9f6b077e57e6a6558af0f12467efdf97/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:32:9-34:40
+137            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+137-->[com.google.android.datatransport:transport-runtime:2.2.6] /home/erik/.gradle/caches/transforms-3/9f6b077e57e6a6558af0f12467efdf97/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:33:13-132
+138            android:exported="false" />
+138-->[com.google.android.datatransport:transport-runtime:2.2.6] /home/erik/.gradle/caches/transforms-3/9f6b077e57e6a6558af0f12467efdf97/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:34:13-37
+139    </application>
+140
+141</manifest>

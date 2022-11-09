@@ -1,0 +1,4 @@
+#Fri Nov 04 19:59:48 CET 2022
+base.0=/home/erik/StudioProjects/code_scanner/build/app/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
